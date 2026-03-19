@@ -1,0 +1,1601 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dataset_salons_lovelie' inline='true' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset_salons_lovelie' name='textscan.0051y141j9wuaw1f4tk5s1fnqlu5'>
+            <connection class='textscan' directory='/Users/arthurrondeau/Desktop/PARIS 8 BIG DATA/SEM2/Visualisation data/TP3' filename='dataset_salons_lovelie.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0051y141j9wuaw1f4tk5s1fnqlu5' name='dataset_salons_lovelie.csv' table='[dataset_salons_lovelie#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+            <column datatype='string' name='reservation_id' ordinal='0' />
+            <column datatype='date' name='date_reservation' ordinal='1' />
+            <column datatype='date' name='date_prestation' ordinal='2' />
+            <column datatype='datetime' name='heure_prestation' ordinal='3' />
+            <column datatype='string' name='salon' ordinal='4' />
+            <column datatype='string' name='categorie' ordinal='5' />
+            <column datatype='string' name='prestation' ordinal='6' />
+            <column datatype='integer' name='duree_minutes' ordinal='7' />
+            <column datatype='integer' name='prix_euros' ordinal='8' />
+            <column datatype='string' name='canal_reservation' ordinal='9' />
+            <column datatype='string' name='statut' ordinal='10' />
+            <column datatype='string' name='client_id' ordinal='11' />
+            <column datatype='string' name='prenom_client' ordinal='12' />
+            <column datatype='string' name='nom_client' ordinal='13' />
+            <column datatype='string' name='telephone_client' ordinal='14' />
+            <column datatype='string' name='email_client' ordinal='15' />
+            <column datatype='string' name='moyen_paiement' ordinal='16' />
+            <column datatype='integer' name='note_satisfaction' ordinal='17' />
+            <column datatype='string' name='commentaire' ordinal='18' />
+            <column datatype='string' name='praticienne' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reservation_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reservation_id]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>reservation_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_reservation</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_reservation]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>date_reservation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_prestation</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_prestation]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>date_prestation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>heure_prestation</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[heure_prestation]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>heure_prestation</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salon</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[salon]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>salon</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categorie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categorie]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>categorie</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prestation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prestation]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>prestation</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duree_minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duree_minutes]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>duree_minutes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prix_euros</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prix_euros]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>prix_euros</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>canal_reservation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[canal_reservation]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>canal_reservation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>statut</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[statut]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>statut</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prenom_client</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prenom_client]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>prenom_client</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nom_client</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nom_client]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>nom_client</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>telephone_client</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[telephone_client]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>telephone_client</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>email_client</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[email_client]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>email_client</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moyen_paiement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[moyen_paiement]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>moyen_paiement</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>note_satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[note_satisfaction]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>note_satisfaction</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commentaire</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[commentaire]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>commentaire</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>praticienne</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[praticienne]</local-name>
+            <parent-name>[dataset_salons_lovelie.csv]</parent-name>
+            <remote-alias>praticienne</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Est Annulé/No-show' datatype='integer' name='[Calculation_0079213481771009]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [statut] = &quot;Annulé&quot; OR [statut] = &quot;No-show&quot; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Manque à gagner' datatype='integer' name='[Calculation_0079213482237955]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [statut] = &quot;Annulé&quot; OR [statut] = &quot;No-show&quot; THEN [prix_euros] ELSE 0 END' />
+      </column>
+      <column caption='Est Réalisé' datatype='integer' name='[Calculation_0079213482848260]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [statut] = &quot;Réalisé&quot; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Taux de réalisation (%)' datatype='real' name='[Calculation_0079213483106309]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_0079213482848260]) / COUNT([reservation_id]) * 100' />
+      </column>
+      <column caption='Jour de la semaine' datatype='string' name='[Calculation_0079213486755846]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;, [date_prestation])' />
+      </column>
+      <column caption='saison_été' datatype='string' name='[Calculation_0156662121123840]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF DATEPART(&apos;month&apos;,[date_prestation]) &gt;= 5 &#10;AND DATEPART(&apos;month&apos;,[date_prestation]) &lt;= 8 &#10;THEN &quot;Mai - Août&quot;&#10;ELSE &quot;Autres mois&quot;&#10;END' />
+      </column>
+      <column caption='taux annulation (%)' datatype='real' name='[Calculation_0190059794690049]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_0079213481771009]) / COUNT([reservation_id]) * 100' />
+      </column>
+      <column caption='dataset_salons_lovelie.csv' datatype='table' name='[__tableau_internal_object_id__].[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]' role='measure' type='quantitative' />
+      <column caption='Canal Reservation' datatype='string' name='[canal_reservation]' role='dimension' type='nominal' />
+      <column caption='Categorie' datatype='string' name='[categorie]' role='dimension' type='nominal' />
+      <column caption='Client Id' datatype='string' name='[client_id]' role='dimension' type='nominal' />
+      <column caption='Commentaire' datatype='string' name='[commentaire]' role='dimension' type='nominal' />
+      <column caption='Date Prestation' datatype='date' name='[date_prestation]' role='dimension' type='ordinal' />
+      <column caption='Date Reservation' datatype='date' name='[date_reservation]' role='dimension' type='ordinal' />
+      <column caption='Duree Minutes' datatype='integer' name='[duree_minutes]' role='measure' type='quantitative' />
+      <column caption='Email Client' datatype='string' name='[email_client]' role='dimension' type='nominal' />
+      <column caption='Heure Prestation' datatype='datetime' name='[heure_prestation]' role='dimension' type='ordinal' />
+      <column caption='Moyen Paiement' datatype='string' name='[moyen_paiement]' role='dimension' type='nominal' />
+      <column caption='Nom Client' datatype='string' name='[nom_client]' role='dimension' type='nominal' />
+      <column caption='Note Satisfaction' datatype='integer' name='[note_satisfaction]' role='measure' type='quantitative' />
+      <column caption='Praticienne' datatype='string' name='[praticienne]' role='dimension' type='nominal' />
+      <column caption='Prenom Client' datatype='string' name='[prenom_client]' role='dimension' type='nominal' />
+      <column caption='Prestation' datatype='string' name='[prestation]' role='dimension' type='nominal' />
+      <column caption='Prix Euros' datatype='integer' name='[prix_euros]' role='measure' type='quantitative' />
+      <column caption='Reservation Id' datatype='string' name='[reservation_id]' role='dimension' type='nominal' />
+      <column caption='Salon' datatype='string' name='[salon]' role='dimension' type='nominal' />
+      <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+      <column caption='Telephone Client' datatype='string' name='[telephone_client]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='fr_FR' class='hyper' dbname='/var/folders/y8/gpytstt55lz40g5vk34_91680000gn/T/tableau-temp/#TableauTemp_1oj08fl0kkqhu11gtun8g14jbaxa.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/19/2026 11:38:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>reservation_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reservation_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reservation_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5500</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_reservation</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_reservation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_reservation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>465</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_prestation</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_prestation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_prestation</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>350</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>heure_prestation</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[heure_prestation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>heure_prestation</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salon</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[salon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salon</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categorie</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[categorie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>categorie</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prestation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[prestation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prestation</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duree_minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[duree_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duree_minutes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prix_euros</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prix_euros]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prix_euros</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>canal_reservation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[canal_reservation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>canal_reservation</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>statut</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[statut]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>statut</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[client_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>939</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prenom_client</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[prenom_client]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prenom_client</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nom_client</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nom_client]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nom_client</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>telephone_client</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[telephone_client]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>telephone_client</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>939</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>email_client</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[email_client]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>email_client</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>939</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>moyen_paiement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[moyen_paiement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>moyen_paiement</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>note_satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[note_satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>note_satisfaction</remote-alias>
+              <ordinal>17</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>commentaire</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[commentaire]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>commentaire</remote-alias>
+              <ordinal>18</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>praticienne</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[praticienne]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>praticienne</remote-alias>
+              <ordinal>19</ordinal>
+              <family>dataset_salons_lovelie.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='dataset_salons_lovelie.csv' id='dataset_salons_lovelie.csv_A93BC9433F0E4CC2BBE70FBA071FD4C2'>
+            <properties context=''>
+              <relation connection='textscan.0051y141j9wuaw1f4tk5s1fnqlu5' name='dataset_salons_lovelie.csv' table='[dataset_salons_lovelie#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+                  <column datatype='string' name='reservation_id' ordinal='0' />
+                  <column datatype='date' name='date_reservation' ordinal='1' />
+                  <column datatype='date' name='date_prestation' ordinal='2' />
+                  <column datatype='datetime' name='heure_prestation' ordinal='3' />
+                  <column datatype='string' name='salon' ordinal='4' />
+                  <column datatype='string' name='categorie' ordinal='5' />
+                  <column datatype='string' name='prestation' ordinal='6' />
+                  <column datatype='integer' name='duree_minutes' ordinal='7' />
+                  <column datatype='integer' name='prix_euros' ordinal='8' />
+                  <column datatype='string' name='canal_reservation' ordinal='9' />
+                  <column datatype='string' name='statut' ordinal='10' />
+                  <column datatype='string' name='client_id' ordinal='11' />
+                  <column datatype='string' name='prenom_client' ordinal='12' />
+                  <column datatype='string' name='nom_client' ordinal='13' />
+                  <column datatype='string' name='telephone_client' ordinal='14' />
+                  <column datatype='string' name='email_client' ordinal='15' />
+                  <column datatype='string' name='moyen_paiement' ordinal='16' />
+                  <column datatype='integer' name='note_satisfaction' ordinal='17' />
+                  <column datatype='string' name='commentaire' ordinal='18' />
+                  <column datatype='string' name='praticienne' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Q1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Chiffre d&apos;affaires total généré par chaque salon</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column-instance column='[salon]' derivation='None' name='[none:salon:nk]' pivot='key' type='nominal' />
+            <column-instance column='[statut]' derivation='None' name='[none:statut:nk]' pivot='key' type='nominal' />
+            <column caption='Prix Euros' datatype='integer' name='[prix_euros]' role='measure' type='quantitative' />
+            <column caption='Salon' datatype='string' name='[salon]' role='dimension' type='nominal' />
+            <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+            <column-instance column='[prix_euros]' derivation='Sum' name='[sum:prix_euros:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]'>
+            <groupfilter function='member' level='[none:statut:nk]' member='&quot;Réalisé&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' value='c#,##0,.0K&quot; €&quot;;-#,##0,.0K&quot; €&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]</cols>
+      </table>
+      <simple-id uuid='{B52305F3-191A-4BD7-9894-327219954509}' />
+    </worksheet>
+    <worksheet name='Q2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Catégorie de prestation qui rapport le plus de revenus dans chaque salon</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column caption='Categorie' datatype='string' name='[categorie]' role='dimension' type='nominal' />
+            <column-instance column='[categorie]' derivation='None' name='[none:categorie:nk]' pivot='key' type='nominal' />
+            <column-instance column='[salon]' derivation='None' name='[none:salon:nk]' pivot='key' type='nominal' />
+            <column-instance column='[statut]' derivation='None' name='[none:statut:nk]' pivot='key' type='nominal' />
+            <column caption='Prix Euros' datatype='integer' name='[prix_euros]' role='measure' type='quantitative' />
+            <column caption='Salon' datatype='string' name='[salon]' role='dimension' type='nominal' />
+            <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+            <column-instance column='[prix_euros]' derivation='Sum' name='[sum:prix_euros:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:categorie:nk]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([prix_euros])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:categorie:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]'>
+            <groupfilter function='member' level='[none:statut:nk]' member='&quot;Réalisé&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]' direction='DESC' measure-to-sort-by='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]</column>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:categorie:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' value='c#,##0,K&quot; €&quot;;-#,##0,K&quot; €&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]</rows>
+        <cols>([federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk] / [federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:categorie:nk])</cols>
+      </table>
+      <simple-id uuid='{4E6346BB-7334-49BB-888C-B1B5DE7E4078}' />
+    </worksheet>
+    <worksheet name='Q3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Evolution du chiffre d&apos;affaires mois par mois</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column caption='saison_été' datatype='string' name='[Calculation_0156662121123840]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;month&apos;,[date_prestation]) &gt;= 5 &#10;AND DATEPART(&apos;month&apos;,[date_prestation]) &lt;= 8 &#10;THEN &quot;Mai - Août&quot;&#10;ELSE &quot;Autres mois&quot;&#10;END' />
+            </column>
+            <column caption='Date Prestation' datatype='date' name='[date_prestation]' role='dimension' type='ordinal' />
+            <column-instance column='[date_prestation]' derivation='Month' name='[mn:date_prestation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_0156662121123840]' derivation='None' name='[none:Calculation_0156662121123840:nk]' pivot='key' type='nominal' />
+            <column-instance column='[statut]' derivation='None' name='[none:statut:nk]' pivot='key' type='nominal' />
+            <column caption='Prix Euros' datatype='integer' name='[prix_euros]' role='measure' type='quantitative' />
+            <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+            <column-instance column='[prix_euros]' derivation='Sum' name='[sum:prix_euros:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]'>
+            <groupfilter function='member' level='[none:statut:nk]' member='&quot;Réalisé&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' value='c#,##0,K&quot; €&quot;;-#,##0,K&quot; €&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:Calculation_0156662121123840:nk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:prix_euros:qk]</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[mn:date_prestation:ok]</cols>
+      </table>
+      <simple-id uuid='{A5578668-67B5-4549-99D3-A45F85F30D51}' />
+    </worksheet>
+    <worksheet name='Q4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Taux d&apos;annulation (et de no-show) par salon et manque à gagner</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column caption='Est Annulé/No-show' datatype='integer' name='[Calculation_0079213481771009]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [statut] = &quot;Annulé&quot; OR [statut] = &quot;No-show&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Manque à gagner' datatype='integer' name='[Calculation_0079213482237955]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [statut] = &quot;Annulé&quot; OR [statut] = &quot;No-show&quot; THEN [prix_euros] ELSE 0 END' />
+            </column>
+            <column caption='taux annulation (%)' datatype='real' name='[Calculation_0190059794690049]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_0079213481771009]) / COUNT([reservation_id]) * 100' />
+            </column>
+            <column-instance column='[salon]' derivation='None' name='[none:salon:nk]' pivot='key' type='nominal' />
+            <column caption='Prix Euros' datatype='integer' name='[prix_euros]' role='measure' type='quantitative' />
+            <column caption='Reservation Id' datatype='string' name='[reservation_id]' role='dimension' type='nominal' />
+            <column caption='Salon' datatype='string' name='[salon]' role='dimension' type='nominal' />
+            <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0079213482237955]' derivation='Sum' name='[sum:Calculation_0079213482237955:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0190059794690049]' derivation='User' name='[usr:Calculation_0190059794690049:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' value='c#,##0.0&quot; %&quot;;-#,##0.0&quot; %&quot;' />
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:Calculation_0079213482237955:qk]' value='c#,##0&quot; €&quot;;-#,##0&quot; €&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:Calculation_0079213482237955:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:Calculation_0079213482237955:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk] + [federated.0y0h9bw042aifd13r8toy0yhs4ux].[sum:Calculation_0079213482237955:qk])</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]</cols>
+      </table>
+      <simple-id uuid='{3DC80431-3DC3-4C56-A9AA-9375E2DBA6AB}' />
+    </worksheet>
+    <worksheet name='Q5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Canal de réservation qui génère le plus de RDV</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column caption='Est Réalisé' datatype='integer' name='[Calculation_0079213482848260]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [statut] = &quot;Réalisé&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Taux de réalisation (%)' datatype='real' name='[Calculation_0079213483106309]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_0079213482848260]) / COUNT([reservation_id]) * 100' />
+            </column>
+            <column caption='Canal Reservation' datatype='string' name='[canal_reservation]' role='dimension' type='nominal' />
+            <column-instance column='[reservation_id]' derivation='Count' name='[cnt:reservation_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[canal_reservation]' derivation='None' name='[none:canal_reservation:nk]' pivot='key' type='nominal' />
+            <column caption='Reservation Id' datatype='string' name='[reservation_id]' role='dimension' type='nominal' />
+            <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0079213483106309]' derivation='User' name='[usr:Calculation_0079213483106309:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0079213483106309:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:canal_reservation:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0079213483106309:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0079213483106309:qk]' value='c#,##0&quot; %&quot;;-#,##0&quot; %&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0079213483106309:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0079213483106309:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:canal_reservation:nk]</rows>
+        <cols>([federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk] + [federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0079213483106309:qk])</cols>
+      </table>
+      <simple-id uuid='{F68F63EF-B9F1-43A8-8564-918292B69CBB}' />
+    </worksheet>
+    <worksheet name='Q6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>10 prestations les plus réalisés sur l&apos;ensemble des salons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column caption='Categorie' datatype='string' name='[categorie]' role='dimension' type='nominal' />
+            <column-instance column='[reservation_id]' derivation='Count' name='[cnt:reservation_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[reservation_id]' derivation='CountD' name='[ctd:reservation_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[categorie]' derivation='None' name='[none:categorie:nk]' pivot='key' type='nominal' />
+            <column-instance column='[prestation]' derivation='None' name='[none:prestation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[statut]' derivation='None' name='[none:statut:nk]' pivot='key' type='nominal' />
+            <column caption='Prestation' datatype='string' name='[prestation]' role='dimension' type='nominal' />
+            <column caption='Reservation Id' datatype='string' name='[reservation_id]' role='dimension' type='nominal' />
+            <column caption='Statut' datatype='string' name='[statut]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:prestation:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([reservation_id])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:prestation:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]'>
+            <groupfilter function='member' level='[none:statut:nk]' member='&quot;Réalisé&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:prestation:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:prestation:nk]</column>
+            <column>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:statut:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:categorie:nk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[ctd:reservation_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:prestation:nk]</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]</cols>
+      </table>
+      <simple-id uuid='{C703E01F-A867-4EFC-9B86-EC64B963E43C}' />
+    </worksheet>
+    <worksheet name='Q7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Note de satisfaction moyenne par salon et par praticienne</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column-instance column='[note_satisfaction]' derivation='Avg' name='[avg:note_satisfaction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[praticienne]' derivation='None' name='[none:praticienne:nk]' pivot='key' type='nominal' />
+            <column-instance column='[salon]' derivation='None' name='[none:salon:nk]' pivot='key' type='nominal' />
+            <column caption='Note Satisfaction' datatype='integer' name='[note_satisfaction]' role='measure' type='quantitative' />
+            <column caption='Praticienne' datatype='string' name='[praticienne]' role='dimension' type='nominal' />
+            <column caption='Salon' datatype='string' name='[salon]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:note_satisfaction:qk]' value='c#,##0.0&quot; &quot;;-#,##0.0&quot; &quot;' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:note_satisfaction:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:note_satisfaction:qk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:note_satisfaction:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:praticienne:nk]</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]</cols>
+      </table>
+      <simple-id uuid='{23606A79-3AE2-4FC8-A59F-3E79EA6B5FE9}' />
+    </worksheet>
+    <worksheet name='Q8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Créneaux horaires et jours de la semaine les plus demandés</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column caption='Jour de la semaine' datatype='string' name='[Calculation_0079213486755846]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;, [date_prestation])' />
+            </column>
+            <column-instance column='[reservation_id]' derivation='Count' name='[cnt:reservation_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[reservation_id]' derivation='CountD' name='[ctd:reservation_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Prestation' datatype='date' name='[date_prestation]' role='dimension' type='ordinal' />
+            <column caption='Heure Prestation' datatype='datetime' name='[heure_prestation]' role='dimension' type='ordinal' />
+            <column-instance column='[heure_prestation]' derivation='Hour' name='[hr:heure_prestation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_0079213486755846]' derivation='None' name='[none:Calculation_0079213486755846:nk]' pivot='key' type='nominal' />
+            <column caption='Reservation Id' datatype='string' name='[reservation_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:Calculation_0079213486755846:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Monday&quot;</bucket>
+              <bucket>&quot;Tuesday&quot;</bucket>
+              <bucket>&quot;Wednesday&quot;</bucket>
+              <bucket>&quot;Thursday&quot;</bucket>
+              <bucket>&quot;Friday&quot;</bucket>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[ctd:reservation_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[hr:heure_prestation:ok]</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:Calculation_0079213486755846:nk]</cols>
+      </table>
+      <simple-id uuid='{51BD2D53-C087-4B37-AB6E-DC1F2371C109}' />
+    </worksheet>
+    <worksheet name='Q9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Panier moyen par salon et par catégorie</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_salons_lovelie' name='federated.0y0h9bw042aifd13r8toy0yhs4ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y0h9bw042aifd13r8toy0yhs4ux'>
+            <column-instance column='[prix_euros]' derivation='Avg' name='[avg:prix_euros:qk]' pivot='key' type='quantitative' />
+            <column caption='Categorie' datatype='string' name='[categorie]' role='dimension' type='nominal' />
+            <column-instance column='[categorie]' derivation='None' name='[none:categorie:nk]' pivot='key' type='nominal' />
+            <column-instance column='[salon]' derivation='None' name='[none:salon:nk]' pivot='key' type='nominal' />
+            <column caption='Prix Euros' datatype='integer' name='[prix_euros]' role='measure' type='quantitative' />
+            <column caption='Salon' datatype='string' name='[salon]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:prix_euros:qk]' value='c#,##0.0&quot; €&quot;;-#,##0.0&quot; €&quot;' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:prix_euros:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:prix_euros:qk]' />
+              <text column='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:prix_euros:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:categorie:nk]</rows>
+        <cols>[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:salon:nk]</cols>
+      </table>
+      <simple-id uuid='{96F55345-969B-445A-B9D8-E434DC01ECA2}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Q1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F283F8A-74FB-423C-8C8B-F5EE48FF031B}' />
+    </window>
+    <window class='worksheet' name='Q2'>
+      <cards>
+        <edge name='left'>
+          <strip size='147'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F5A09F4-FB80-4C84-A42F-44C5B7AE2A02}' />
+    </window>
+    <window class='worksheet' name='Q3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:Calculation_0156662121123840:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B96DDF82-3AC4-463F-A9C2-903FAE4B1BB0}' />
+    </window>
+    <window class='worksheet' name='Q4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='5' param='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[usr:Calculation_0190059794690049:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{051E2220-D233-43DE-AA4B-698C575C4EB8}' />
+    </window>
+    <window class='worksheet' name='Q5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FAD22BD5-642C-44BA-9455-A8C3C547A020}' />
+    </window>
+    <window class='worksheet' name='Q6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[none:categorie:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3154F913-3C75-437E-9A84-497F0AF5EE3E}' />
+    </window>
+    <window class='worksheet' name='Q7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:note_satisfaction:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E3FD9807-2DDD-45E3-BD3D-CFB0EB9589F3}' />
+    </window>
+    <window class='worksheet' name='Q8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[cnt:reservation_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C9EEDB7D-C1BC-413E-9DFB-053104EBF723}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Q9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0y0h9bw042aifd13r8toy0yhs4ux].[avg:prix_euros:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2823B39-BF08-4FDA-9975-6CC1223D3111}' />
+    </window>
+  </windows>
+</workbook>
